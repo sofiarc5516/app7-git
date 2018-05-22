@@ -4,7 +4,7 @@ $(document).ready(function(e) {
 	document.addEventListener("deviceready", function() {
 		
 		$('#izquierda').on("swipeleft", function() {
-			navigator.notification.alert("Deslizo a la izquierda", function() {"Aplicacion7", "Aceptar"});
+			navigator.notification.alert("Deslizo a la izquierda", function() {"Aplicación7", "Aceptar"});
 		});
 		
 $('#derecha').on("swiperight", function() {
@@ -12,14 +12,14 @@ $('#derecha').on("swiperight", function() {
 		switch(otp)
 		{
 			case 1:
-			navigator.notification.beep(1);
+			navigator.notification.beep(2);
 			break;
 			
 			case 2:
-			navigator.notification.vibrate(1000);
+			navigator.notification.vibrate(2000);
 			break;
 		}
-	},"Aplicacion7","Beep,Vibrar,Cancelar");
+	},"Aplicación7","Beep,Vibrar,Cancelar");
 	
 });
 	},false);
